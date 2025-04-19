@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 function logger() {
-  console.log("My name");
+  console.log('My name');
 }
 
 logger();
@@ -14,7 +14,7 @@ const calcAge2 = function (birthYear) {
   return 2025 - birthYear;
 };
 
-const calcAge3 = (birthYear) => 2025 - birthYear;
+const calcAge3 = birthYear => 2025 - birthYear;
 
 const age1 = calcAge1(1991);
 const age2 = calcAge2(1991);
@@ -107,29 +107,29 @@ console.log(years.indexOf(2001), years.includes(2001));
 // console.log(totals);
 
 const jonas = {
-  firstName: "Jonas",
-  lastName: "Sch",
+  firstName: 'Jonas',
+  lastName: 'Sch',
   age: 2024 - 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
 };
 
-console.log(jonas, jonas.lastName, jonas["lastName"]);
-const nameKey = "Name";
-console.log(jonas["first" + nameKey], jonas["last" + nameKey]);
+console.log(jonas, jonas.lastName, jonas['lastName']);
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey], jonas['last' + nameKey]);
 
 const interestedIn = prompt(
-  "What do you want to know? firstName, lastName, age, job, friends"
+  'What do you want to know? firstName, lastName, age, job, friends'
 );
 
 if (jonas[interestedIn]) {
   console.log(jonas[interestedIn]);
 } else {
-  console.log("Wrong request");
+  console.log('Wrong request');
 }
 
-jonas.location = "Portugal";
-jonas["twitter"] = "@jonas";
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonas';
 console.log(jonas);
 
 console.log(
@@ -137,7 +137,7 @@ console.log(
 );
 
 const jonas2 = {
-  firstName: "Jonas",
+  firstName: 'Jonas',
   birthYear: 1991,
   calcAge1: function (birthYear) {
     return 2025 - birthYear;
@@ -157,11 +157,11 @@ const jonas2 = {
   },
 };
 
-console.log(jonas2.calcAge3(), jonas2["calcAge2"]());
+console.log(jonas2.calcAge3(), jonas2['calcAge2']());
 console.log(jonas2.getSummary());
 
 const mark = {
-  fullName: "Mark Miller",
+  fullName: 'Mark Miller',
   mass: 78,
   height: 1.69,
   calcBMI: function () {
@@ -171,7 +171,7 @@ const mark = {
 };
 
 const john = {
-  fullName: "John Smith",
+  fullName: 'John Smith',
   mass: 92,
   height: 1.95,
   calcBMI: function () {
